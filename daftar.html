@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Diri</title>
+    <link rel="stylesheet" href="daftar.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="order_process.php" method="post">
+            <h1>Data Diri</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Nama" required name="Nama">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Alamat Yang Dituju" required name="Alamat-Yang-Dituju">
+            </div>
+            <div class="input-box">
+                <select name="Pilih-Minuman" required>
+                    <option value="" disabled selected>Pilih Minuman</option>
+                    <option value="Cappucino">Cappucino</option>
+                    <option value="Americano">Americano</option>
+                    <option value="Espresso">Espresso</option>
+                    <option value="Coffee Latte">Coffee Latte</option>
+                    <option value="Mocha">Mocha</option>
+                    <option value="Brown Sugar">Brown Sugar</option>
+                    <option value="Matcha Boba">Matcha Boba</option>
+                    <option value="Air Putih">Air Putih</option>
+                    <option value="Rill Coffee">Rill Coffee</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Jumlah Pesanan" name="Jumlah-Pesanan" min="1" required>
+            </div>
+
+            <button type="submit" class="btn">Pesan</button>
+            <a href="index.html" target="_blank" class="button-Home">Back</a>
+        </form>
+    </div>
+</body>
+</html>

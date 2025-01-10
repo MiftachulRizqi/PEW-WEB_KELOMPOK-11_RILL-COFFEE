@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Image/hero-section-banner\ \(1\).webp)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: black;
+    border: 2px solid antiquewhite;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    color: white
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 1px solid antiquewhite;
+    border-radius: 40px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: grey;
+}
+
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background-color: antiquewhite;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: scale(0.90);
+}
+
+.button-Home {
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to right, antiquewhite, antiquewhite);
+    color: black;
+    border: none;
+    padding: 12px 1px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1%;
+    font-family: inherit;
+}
+
+.button-Home:hover {
+    transform: scale(0.90);
+}
+
+/* Gaya untuk <select> */
+.input-box select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 0 20px;
+    appearance: none; /* Menghapus panah bawaan */
+    justify-content: center;
+}
+
+
+
+.input-box select option {
+    background: #333;
+    color: white;
+}
+
+/* Gaya untuk <input type="number"> */
+.input-box input[type="number"] {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 0 20px;
+}
+
+
+
+
+

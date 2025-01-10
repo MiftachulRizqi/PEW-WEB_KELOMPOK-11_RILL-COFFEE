@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout RillCoffee</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="container">
+
+        <a href="index.html">
+            <button class="close-btn">x</button>
+        </a>
+
+        <h1>Detail Pesanan Anda</h1>
+        <div class="details">
+            <p><span>Nama:</span> <span id="display-nama"></span></p>
+            <p><span>Alamat:</span> <span id="display-alamat"></span></p>
+            <p><span>Minuman yang Dipesan:</span> <span id="display-minuman"></span></p>
+            <p><span>Jumlah:</span> <span id="display-jumlah"></span></p>
+            <p><span>Harga Total:</span> <span id="display-harga-total"></span></p>
+        </div>
+        <div class="barcode">
+            <img src="Image/barcode.jpg" alt="Barcode">
+        </div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const nama = params.get("Nama");
+        const alamat = params.get("Alamat-Yang-Dituju");
+        const minuman = params.get("Pilih-Minuman");
+        const jumlah = params.get("Jumlah-Pesanan");
+
+        document.getElementById("display-nama").textContent = nama || "-";
+        document.getElementById("display-alamat").textContent = alamat || "-";
+        document.getElementById("display-minuman").textContent = minuman || "-";
+        document.getElementById("display-jumlah").textContent = jumlah || "0";
+
+        const hargaPerItem = 15000;
+        const totalHarga = jumlah ? hargaPerItem * parseInt(jumlah) : 0;
+        document.getElementById("display-harga-total").textContent = `Rp. ${totalHarga.toLocaleString()}`;
+    </script>
+</body>
+</html>
